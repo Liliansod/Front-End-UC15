@@ -1,0 +1,26 @@
+criar branch
+git branch <nome-da-branch>
+git branch dev
+
+trocar de branch
+git checkout <nome-da-branch>
+$main> git checkout dev = saindo da main indo pra dev
+só a 1ªvez que trocar de branch
+a branch main leva o conteúdo para branch dev
+
+quais os comandos git para jogar na nuvem
+3 comandos
+1) git add . -> adicionar para gerar a versão
+2) git commit -m "comentário" ->gerar a versão
+3) git push origin <nome-da-branch> - enviar para o git
+
+Atualizar(mesclar) branch's
+$dev> git checkout prod
+$prod> git merge dev
+
+
+
+
+
+
+
