@@ -7,11 +7,12 @@
     --secondary-bg-color:#5c1011;
 }
 
+/* (* Significa toda a página)*/
 * {
     font-family: "Lato";
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Assim significa que tudo é um box*/
 }
 
 a {
@@ -20,6 +21,13 @@ a {
 
 img {
     width: 100%;
+}
+
+i{
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 /* id */
@@ -33,12 +41,9 @@ img {
 }
 
 #inner-header{
-    /* padrão linha */
-    display: flex;
-    /* alinhamento é horizontal, eixo x */
-    justify-content: space-between;
-    /* alinhamento vertical, eixo y */
-    align-items: center;
+    display: flex;  /* padrão linha */
+    justify-content: space-between;  /* alinhamento é horizontal, eixo x */
+    align-items: center;  /* alinhamento vertical, eixo y */
 }
 
 #brand {
@@ -58,24 +63,83 @@ img {
     font-weight: bold;
     padding: 1rem;
 }
+.banner.active{
+    opacity: 1; /* banner ativo é mostrado */
+}
+.banner{
+    max-width: 45%;
+    opacity: 0;
+    padding: 4rem;
+    position: absolute;
+}
 
+.banner h2{
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index:2;
+}
+
+.banner p{
+    font-size: 1.5rem;
+}
+
+.square{
+    display:block;
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index:1;
+}
+
+.dots{
+    display:flex;
+    gap:2rem;
+    position: absolute;
+    bottom: 9rem;
+    left:3rem;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+
+.dot.active{
+    background-color: var(--secondary-bg-color);
+}
 
 #other-services{
-    /* Largura de 100% */
-    width: 100%;
-    /* Separa as caixas */
-    display: flex;
-    /* separa todos os lados das caixas dentro de caixas */
-    gap: 2rem;
+    width: 100%;  /* Largura de 100% */
+    display: flex;  /* Separa as caixas deixando elas lineares dentro de uma div horizontal */
+    gap: 2rem;       /* separa todos os lados das caixas dentro de caixas */
     padding: 2rem;
 }
 
 .service{
-    position: relative;
+    position: relative; /*É a posição realativa em relação a caixa ou icone dentro dele mesmo*/
+
 }
 
 .service i{
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: absolute; /*Relação absoluta em relação a caixa esterna da mesma*/
+    left: 0; /*Posição do icole para lado esquerdo (movimento em px)*/
+    top: 0;  /*Posição ao topo do site (não teria necessidade pois já começa no top por causa do position: relative declarado na caixa principal*/
+}
+
+.service-info{
+    background-color: var(--tertiary-color); /* Cores do fundo)*/
+    padding: 2rem 1.4rem; /*Espaçamento das palavras verificado no protótipo */
+    min-height: 250px;
+}
+
+.service h4{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase; /*uppercase é caica auta, para as palavras ficarem aum maiusculas*/
+
 }
