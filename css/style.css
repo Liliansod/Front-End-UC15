@@ -58,3 +58,24 @@ img {
     font-weight: bold;
     padding: 1rem;
 }
+
+
+#other-services{
+    /* Largura de 100% */
+    width: 100%;
+    /* Separa as caixas */
+    display: flex;
+    /* separa todos os lados das caixas dentro de caixas */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.service{
+    position: relative;
+}
+
+.service i{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
