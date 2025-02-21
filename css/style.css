@@ -269,8 +269,11 @@ i {
 .data .text {
     text-transform: uppercase;
 }
+
+
 /* ******** */
 /*Depoimentos*/
+
 #testimonial {
     display: flex;
     align-items: center;
@@ -301,3 +304,35 @@ i {
     color: var(   );
 }
  
+/* ******** */
+/*Colaboradoes*/
+
+#team{
+    width: 100%;
+    display: center;
+    align-items: center;
+}
+
+#team h2{
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+#team .square span{
+    color: var(--main-color);
+}
+
+.employees{
+    display: flex;
+    gap:2rem;
+    padding: 2rem;
+    align-items: center;    
+}
+.employees .employees-name{
+   color: var(--main-color);
+   display: flex;
+   justify-content: center;
+}
+.employees .employees-role{
+}
